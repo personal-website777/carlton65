@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>65 Carlton | Premium Companion Lounge & Private Facilities</title>
+    <meta name="description" content="Welcome to 65 Carlton, a premium adult entertainment venue located at 65 Planthurst Rd, Carlton NSW. Offering private ensuite suites, undercover off-street parking, and 24/7 service.">
+    <!-- Premium Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo" id="logo-btn">65 Carlton</a>
+            <nav class="nav-tabs">
+                <button class="tab-btn active" data-tab="home" id="tab-home-btn">Home</button>
+                <button class="tab-btn" data-tab="girls" id="tab-girls-btn">Our Girls</button>
+            </nav>
+            <a href="tel:0433897966" class="nav-call-btn" id="header-call-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Call: 0433 897 966
+            </a>
+        </div>
+    </header>
+
+    <!-- Home Page View -->
+    <main>
+        <section id="home-page" class="page-view active">
+            <!-- Hero Showcase Banner -->
+            <div class="hero-section">
+                <span class="hero-subtitle">Premium Hostess & Companion Lounge | Open 24/7</span>
+                <h1 class="hero-title">Experience the Distinction of <span>65 Carlton</span></h1>
+                <p class="hero-desc">Located in Carlton, NSW, we provide a luxurious, secure, and private sanctuary. Featuring high-end ensuite rooms, an intimate waiting area, and hosting elite independent companions.</p>
+                <button class="hero-cta-btn" id="cta-explore">Explore Our Roster</button>
+            </div>
+
+            <!-- About Section -->
+            <h2 class="section-title">About 65 Carlton</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Uncompromising Standards, Absolute Privacy</h3>
+                    <p>65 Carlton is Sydney's premier boutique destination for private adult entertainment. Situated at <strong>65 Planthurst Rd, Carlton NSW 2218</strong>, our highly discreet venue is designed to guarantee complete comfort and confidentiality.</p>
+                    <p>We provide state-of-the-art facilities for independent companions. Every room is appointed with premium private ensuite facilities, ensuring an experience of absolute luxury and relaxation. Walk-ins and bookings are welcome 24 hours a day, 7 days a week.</p>
+                </div>
+                <div class="about-badges">
+                    <div class="badge-card">
+                        <h4>Open 24/7</h4>
+                        <p>Our reception is active 24 hours a day, 7 days a week for your convenience.</p>
+                    </div>
+                    <div class="badge-card">
+                        <h4>Complete Discretion</h4>
+                        <p>Undercover off-street parking and a highly private entrance assure confidentiality.</p>
+                    </div>
+                    <div class="badge-card">
+                        <h4>Premium Ensuites</h4>
+                        <p>Every room is fully equipped with high-end private bathroom facilities.</p>
+                    </div>
+                    <div class="badge-card">
+                        <h4>Intimate Lounge</h4>
+                        <p>Enjoy complimentary premium beverages in our comfortable waiting area.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Atmospheric Gallery -->
+            <h2 class="section-title">The Ambiance</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/lounge_hero.jpg" alt="65 Carlton Bar Lounge Interior">
+                    <div class="gallery-overlay">
+                        <span>Intimate Waiting Lounge</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/girl1_2.jpg" alt="Champagne and Luxury Hosting Detail">
+                    <div class="gallery-overlay">
+                        <span>Complimentary Refreshments</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/girl3_2.jpg" alt="Elegant seating in private ensuite rooms">
+                    <div class="gallery-overlay">
+                        <span>Private Ensuite Suites</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Girls Page View -->
+        <section id="girls-page" class="page-view">
+            <h2 class="section-title">Our Roster</h2>
+            <p class="intro-text">Browse our curated collection of sophisticated hostesses currently visiting 65 Carlton. View personal details and cycle through portfolios. For bookings or checking availability, click the button to call reception directly.</p>
+            
+            <!-- Hostesses Cards Container Grid (Populated dynamically by app.js) -->
+            <div class="girls-grid" id="girls-grid">
+                <!-- Hostess cards are injected here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Booking Confirmation Dialog Modal -->
+    <div class="modal-overlay" id="booking-modal">
+        <div class="modal-content">
+            <button class="close-modal-btn" id="close-modal" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <h3 class="modal-title">Request Booking</h3>
+                <span class="modal-subtitle" id="modal-hostess-name">Elena</span>
+            </div>
+            <div class="modal-body">
+                <p>All bookings at 65 Carlton are handled strictly through a secure, private phone call with our reception desk to preserve confidentiality.</p>
+                
+                <div class="modal-info-box">
+                    <div class="modal-info-row">
+                        <label>Preferred Hostess:</label>
+                        <span id="modal-hostess-name-confirm">Elena</span>
+                    </div>
+                    <div class="modal-info-row">
+                        <label>Booking Code:</label>
+                        <span id="modal-booking-code" style="color: var(--gold); font-weight: 700; font-family: monospace;">C65-ELENA</span>
+                    </div>
+                    <div class="modal-info-row">
+                        <label>Contact Desk:</label>
+                        <span id="modal-owner-name">Reception</span>
+                    </div>
+                </div>
+
+                <p style="margin-bottom: 1.5rem; font-size: 0.95rem;">Click below to dial and reference the booking code to check availability.</p>
+                
+                <a href="tel:0433897966" class="phone-action-btn" id="modal-call-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Call Reception (0433 897 966)
+                </a>
+                
+                <p class="modal-disclaimer">Please note: Rates for services are negotiated directly with the hostess. Facility hire terms apply. ID check is required upon entry.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">65 Carlton</div>
+            <p style="color: var(--gold); font-weight: 600; margin-bottom: 0.5rem; font-size: 0.95rem;">
+                65 Planthurst Rd, Carlton NSW 2218
+            </p>
+            <p class="footer-text">Boutique adult facility providing upscale ensuite rooms and accommodation for independent companions. Discretion and luxury guaranteed. Open 24/7.</p>
+            <div class="footer-contact">
+                <a href="tel:0433897966" class="footer-link">
+                    Call: 0433 897 966
+                </a>
+            </div>
+            <p style="margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--text-secondary);">
+                developer: <a href="https://www.deepakkumaryadav.com.np/" target="_blank" style="color: var(--gold); text-decoration: none; transition: color 0.3s ease;">Deepak Kumar Yadav</a>
+            </p>
+            <p class="footer-copy">&copy; 2026 65 Carlton. All Rights Reserved. Strictly over 18s only.</p>
+        </div>
+    </footer>
+
+    <!-- App Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
